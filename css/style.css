@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: grey;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+}
+
+header {
+  margin-top: 30px;
+  height: calc(100vh - 100px);
+  background-color: darkgreen;
+  -webkit-animation: banner 15s infinite;
+          animation: banner 15s infinite;
+  height: 80vh;
+  position: relative;
+  background-image: url("../images/slider1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header h1.title {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: arial;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+
+header div.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: transparent;
+}
+
+header div.dots div.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid grey;
+}
+
+header div.dots div.dot.active {
+  border: 2px solid red;
+  background-color: black;
+}
+
+@-webkit-keyframes banner {
+  0% {
+    background-color: white;
+  }
+  3% {
+    background-color: darkgreen;
+  }
+  27% {
+    background-color: darkgreen;
+  }
+  33% {
+    background-color: white;
+  }
+  36% {
+    background-color: yellow;
+  }
+  63% {
+    background-color: yellow;
+  }
+  66% {
+    background-color: white;
+  }
+  69% {
+    background-color: blue;
+  }
+  97% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes banner {
+  0% {
+    background-color: white;
+  }
+  3% {
+    background-color: darkgreen;
+  }
+  27% {
+    background-color: darkgreen;
+  }
+  33% {
+    background-color: white;
+  }
+  36% {
+    background-color: yellow;
+  }
+  63% {
+    background-color: yellow;
+  }
+  66% {
+    background-color: white;
+  }
+  69% {
+    background-color: blue;
+  }
+  97% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */
